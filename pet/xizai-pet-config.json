@@ -7,7 +7,7 @@
       "balanceEnabled": false,
       "whisperEnabled": false,
       "workStatusEnabled": false,
-      "fixedEnabled": true,
+      "fixedEnabled": false,
       "display": "desktop",
       "position": {
         "corner": "bottom-right",
@@ -22,20 +22,26 @@
       "waiting",
       "waving"
     ],
-    "turn": [],
+    "turn": [
+      "turn"
+    ],
     "drag": [],
     "clicks": [
       "click"
     ],
     "moves": {
       "default": {
-        "minDist": 60,
+        "minDist": 80,
         "maxDist": 240,
         "margin": 20,
-        "leadSec": 1,
-        "tailSec": 1
+        "leadSec": 0,
+        "tailSec": 0
       },
-      "actions": []
+      "actions": [
+        {
+          "name": "walk"
+        }
+      ]
     },
     "categories": [
       {
@@ -54,8 +60,8 @@
     }
   },
   "animationWeights": {
-    "idle": 100,
-    "turn": 0,
-    "move": 0
+    "idle": 40,
+    "turn": 25,
+    "move": 35
   }
 }

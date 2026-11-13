@@ -1,6 +1,6 @@
 # 喜仔桌宠 for DeepSeek Harness
 
-喜仔是一个 [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) 角色包：坐着做双手 V 字手势，平时会等待和挥手。点击喜仔时，它会挥手并显示“我四风了”。这句话是动画气泡，不会发送到聊天框。
+喜仔是一个 [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) 角色包：平时会等待、挥手，并随机左右漫游。点击喜仔时，它会挥手并显示“我四风了”。这句话是动画气泡，不会发送到聊天框。
 
 ![喜仔点击效果](preview.png)
 
@@ -22,6 +22,8 @@ dsh plugin --profile desktop add dsh-xizai-pet
 ## 配置与卸载
 
 插件首次启动时，把素材和默认配置复制到 `$DSH_HOME/dsh-pet/pet/`（默认 `~/.dsh/dsh-pet/pet/`），不会覆盖已有文件。你可以在 dsh-pet 设置中调整喜仔的位置、大小及显示方式。
+
+从 1.0.0 升级时，插件会为仍使用原始固定动画配置的用户启用漫游，并备份原配置；自定义过移动配置的用户可在配置中自行调整。dsh-pet 会镜像朝右的动画，因此朝右时点击气泡里的文字也会被镜像。
 
 卸载本插件后，角色包文件会保留。若还想移除喜仔，请手动删除该目录下的 `xizai-pet-config.json` 和 `xizai-pet-animation` 目录，然后重启 DSH。
 

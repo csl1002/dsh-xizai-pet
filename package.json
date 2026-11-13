@@ -1,6 +1,6 @@
 {
   "name": "dsh-xizai-pet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "喜仔桌宠角色包：适用于 DeepSeek Harness 的 dsh-pet 插件",
   "repository": { "type": "git", "url": "https://github.com/csl1002/dsh-xizai-pet.git" },
   "type": "module",
