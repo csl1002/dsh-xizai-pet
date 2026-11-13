@@ -6,14 +6,16 @@
 
 ## 安装
 
-本角色包需要先安装并启用 **dsh-pet 0.4.7 或兼容版本**。在 DeepSeek Harness 的插件管理中先安装 `dsh-pet`，再添加 `github:csl1002/dsh-xizai-pet`。使用命令行：
+本角色包需要先安装并启用 **dsh-pet 0.4.7 或兼容版本**。在 DeepSeek Harness 的插件管理中先安装 `dsh-pet`，再安装 `dsh-xizai-pet`。使用命令行：
 
 ```sh
 dsh plugin --profile desktop add dsh-pet
-dsh plugin --profile desktop add github:csl1002/dsh-xizai-pet
+dsh plugin --profile desktop add dsh-xizai-pet
 ```
 
 完全退出并重启 DeepSeek Harness。喜仔默认出现在桌面右下角。如果首次启动后未出现，请再重启一次，并在 dsh-pet 的桌宠配置中检查喜仔是否启用。浏览器版请把上面的 `desktop` 换成 `web`，并在桌宠配置中将喜仔的显示位置设为 web 或 both。
+
+也可以从 GitHub 安装：`dsh plugin --profile desktop add github:csl1002/dsh-xizai-pet`。
 
 动画采用带透明通道的 VP9 WebM；Safari 和 WebKit 环境需要另行提供兼容格式的素材。
 
